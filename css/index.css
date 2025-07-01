@@ -33,6 +33,12 @@
     font-size: 32px;
   }
 }
+@media (max-width: 500px) {
+  .nombre {
+    margin: 30px;
+    padding: 2px;
+  }
+}
 .titulos {
   display: flex;
   justify-content: center;
@@ -71,12 +77,22 @@
     font-size: 12px;
   }
 }
+@media (max-width: 500px) {
+  .descripciones {
+    margin: 30px;
+  }
+}
 /*NAV*/
 .contenedor-contactos {
   display: flex;
   align-items: center;
   flex-direction: column;
   margin: 50px;
+}
+@media (max-width: 500px) {
+  .contenedor-contactos{
+    margin: 30px;
+  }
 }
 .img {
   width: 20%;
@@ -95,6 +111,11 @@
 @media (max-width: 650px) {
   .img {
     width: 40%;
+  }
+}
+@media (max-width: 500px) {
+  .img {
+    width: 55%;
   }
 }
 .contactos {
@@ -122,6 +143,13 @@
   .contactos {
     flex-wrap: wrap;
     gap: 50px;
+  }
+}
+@media (max-width: 500px) {
+  .contactos {
+    margin: 20px;
+    flex-wrap: wrap;
+    gap: 40px;
   }
 }
 .contacto {
@@ -164,6 +192,14 @@
     font-size: 18px;
     &:hover {
       font-size: 20px;
+    }
+  }
+}
+@media (max-width: 500px) {
+  .contacto {
+    font-size: 16px;
+    &:hover {
+      font-size: 18px;
     }
   }
 }
@@ -245,5 +281,10 @@
 @media (max-width: 950px) {
   .img-ejemplo {
     width: 30%;
+  }
+}
+@media (max-width: 500px) {
+  .img-ejemplo {
+    width: 40%;
   }
 }
