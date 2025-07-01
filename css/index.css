@@ -5,7 +5,7 @@
   font-family: "Oswald", sans-serif;
   background-color: #4d3414;
 }
-.nombre{
+.nombre {
   font-size: 40px;
   display: flex;
   justify-content: center;
@@ -13,22 +13,42 @@
   border: 2px black solid;
   border-radius: 20px;
 }
-@media(max-width: 1150px){
-  .nombre{
+@media (max-width: 1150px) {
+  .nombre {
     margin: 30px 250px;
   }
 }
-@media(max-width: 950px){
-  .nombre{
+@media (max-width: 950px) {
+  .nombre {
     margin: 30px 150px;
   }
 }
-.titulos{
+@media (max-width: 770px) {
+  .nombre {
+    margin: 30px 100px;
+  }
+}
+@media (max-width: 650px) {
+  .nombre {
+    font-size: 32px;
+  }
+}
+.titulos {
   display: flex;
   justify-content: center;
   font-size: 35px;
 }
-.descripciones{
+@media (max-width: 770px) {
+  .titulos {
+    font-size: 28px;
+  }
+}
+@media (max-width: 650px) {
+  .titulos {
+    font-size: 22px;
+  }
+}
+.descripciones {
   font-size: 20px;
   display: flex;
   align-items: center;
@@ -36,9 +56,19 @@
   justify-content: center;
   margin: 20px 60px;
 }
-@media(max-width: 950px){
-  .descripciones{
+@media (max-width: 950px) {
+  .descripciones {
     font-size: 16px;
+  }
+}
+@media (max-width: 650px) {
+  .descripciones {
+    font-size: 14px;
+  }
+}
+@media (max-width: 576px) {
+  .descripciones {
+    font-size: 12px;
   }
 }
 /*NAV*/
@@ -54,15 +84,17 @@
   border: 3px black solid;
   transition: 1s;
   &:hover {
-    width: 22%;
+    transform: scale(1.1);
   }
 }
-@media(max-width: 1150px){
-  .img{
+@media (max-width: 1150px) {
+  .img {
     width: 30%;
-    &:hover {
-      width: 32%;
-    }
+  }
+}
+@media (max-width: 650px) {
+  .img {
+    width: 40%;
   }
 }
 .contactos {
@@ -71,10 +103,26 @@
   margin: 30px;
   gap: 100px;
 }
-@media(max-width: 1150px){
- .contactos{
-  gap: 60px;
- } 
+@media (max-width: 1150px) {
+  .contactos {
+    gap: 60px;
+  }
+}
+@media (max-width: 770px) {
+  .contactos {
+    gap: 40px;
+  }
+}
+@media (max-width: 770px) {
+  .contactos {
+    gap: 30px;
+  }
+}
+@media (max-width: 576px) {
+  .contactos {
+    flex-wrap: wrap;
+    gap: 50px;
+  }
 }
 .contacto {
   text-decoration: none;
@@ -87,11 +135,35 @@
     transition: 1s;
   }
 }
-@media(max-width: 1150px){
-  .contacto{
+@media (max-width: 1150px) {
+  .contacto {
     font-size: 20px;
     &:hover {
       font-size: 25px;
+    }
+  }
+}
+@media (max-width: 770px) {
+  .contacto {
+    font-size: 18px;
+    &:hover {
+      font-size: 20px;
+    }
+  }
+}
+@media (max-width: 650px) {
+  .contacto {
+    font-size: 14px;
+    &:hover {
+      font-size: 16px;
+    }
+  }
+}
+@media (max-width: 576px) {
+  .contacto {
+    font-size: 18px;
+    &:hover {
+      font-size: 20px;
     }
   }
 }
@@ -103,25 +175,28 @@
   gap: 100px;
   margin: 50px;
 }
-@media(max-width: 950px){
-  .contenedor-certificados{
+@media (max-width: 950px) {
+  .contenedor-certificados {
     gap: 60px;
+  }
+}
+@media (max-width: 576px) {
+  .contenedor-certificados {
+    margin: 30px;
   }
 }
 .img-certificado {
   width: 50%;
+  object-fit: cover;
   transition: 1s;
   &:hover {
-    width: 55%;
+    transform: scale(1.1);
     transition: 1s;
   }
 }
-@media(max-width: 950px){
-  .img-certificado{
+@media (max-width: 950px) {
+  .img-certificado {
     width: 70%;
-    &:hover {
-      width: 75%;
-    }
   }
 }
 /*ASIDE*/
@@ -132,26 +207,43 @@
   gap: 100px;
   margin: 50px;
 }
-@media(max-width: 1150px){
-  .contenedor-ejemplos{
+@media (max-width: 1150px) {
+  .contenedor-ejemplos {
     gap: 50px;
   }
 }
-.ejemplos{
+@media (max-width: 1150px) {
+  .contenedor-ejemplos {
+    margin: 20px;
+    gap: 60px;
+  }
+}
+.ejemplos {
   display: flex;
   justify-content: center;
 }
 .img-ejemplo {
   width: 50%;
+  object-fit: cover;
   border-radius: 200px;
+  transition: 1s;
+  &:hover {
+    transform: scale(1.1);
+    transition: 1s;
+  }
 }
-@media(max-width: 1150px){
-  .img-ejemplo{
+@media (max-width: 1150px) {
+  .img-ejemplo {
     width: 30%;
   }
 }
-@media(max-width: 950px){
-  .img-ejemplo{
+@media (max-width: 950px) {
+  .img-ejemplo {
     width: 50%;
+  }
+}
+@media (max-width: 950px) {
+  .img-ejemplo {
+    width: 30%;
   }
 }
